@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clue 2</title>
+<style>
+  :root {
+    --bg1: #090014;
+    --bg2: #120a2a;
+    --panel: rgba(10, 16, 30, 0.78);
+    --text: #f7fbff;
+    --muted: #b8c4d9;
+    --accent: #00ffcc;
+    --accent2: #7c5cff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(circle at top left, rgba(124,92,255,.35), transparent 28%),
+      radial-gradient(circle at top right, rgba(0,255,204,.18), transparent 24%),
+      linear-gradient(160deg, var(--bg1), var(--bg2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+  }
+  .card {
+    width: min(94vw, 760px);
+    background: var(--panel);
+    border: 2px solid rgba(255,255,255,.08);
+    border-radius: 28px;
+    padding: 28px 22px 30px;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,.04) inset,
+      0 16px 60px rgba(0,0,0,.5),
+      0 0 26px rgba(124,92,255,.28);
+    backdrop-filter: blur(8px);
+    text-align: center;
+  }
+  .tag {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: clamp(12px, 2.8vw, 16px);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #081018;
+    background: linear-gradient(90deg, var(--accent), #fff08a);
+    box-shadow: 0 0 20px color-mix(in srgb, var(--accent) 50%, transparent);
+    margin-bottom: 14px;
+  }
+  h1 {
+    margin: 0 0 8px;
+    font-size: clamp(30px, 7vw, 56px);
+    line-height: 1.02;
+    text-shadow: 0 0 18px rgba(255,255,255,.12), 0 0 28px color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: clamp(16px, 3.5vw, 22px);
+    line-height: 1.45;
+    margin: 8px auto 18px;
+    max-width: 32ch;
+  }
+  .content {
+    margin-top: 16px;
+    font-size: clamp(24px, 6vw, 40px);
+    font-weight: 800;
+    line-height: 1.28;
+  }
+  .content p {
+    margin: 14px 0;
+  }
+  .code {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 14px 18px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.03), 0 0 26px rgba(0,0,0,.22);
+    word-break: break-word;
+    font-size: clamp(26px, 7vw, 48px);
+    letter-spacing: .08em;
+  }
+  .hint {
+    margin-top: 18px;
+    font-size: clamp(16px, 3.5vw, 22px);
+    color: #fff08a;
+    font-weight: 700;
+  }
+  .small {
+    font-size: clamp(18px, 4.2vw, 28px);
+    font-weight: 700;
+  }
+  .pulse {
+    animation: pulse 1.8s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(255,255,255,0)); }
+    50% { transform: scale(1.02); filter: drop-shadow(0 0 10px rgba(255,255,255,.2)); }
+  }
+  .footer {
+    margin-top: 18px;
+    font-size: clamp(14px, 3vw, 18px);
+    color: var(--muted);
+    letter-spacing: .04em;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="tag pulse">Easter System Breach</div>
+    <h1>Clue 2</h1>
+    
+    <div class="content"><p>Unscramble and remove the extra letter</p><div class="code">B O A T H R O M X</div></div>
+    <div class="footer">Decode. Solve. Keep moving.</div>
+  </div>
+</body>
+</html>
