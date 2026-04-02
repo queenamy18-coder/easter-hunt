@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Access Denied</title>
+<style>
+  :root {
+    --bg1: #090014;
+    --bg2: #120a2a;
+    --panel: rgba(10, 16, 30, 0.78);
+    --text: #f7fbff;
+    --muted: #b8c4d9;
+    --accent: #ff4d6d;
+    --accent2: #7c5cff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(circle at top left, rgba(124,92,255,.35), transparent 28%),
+      radial-gradient(circle at top right, rgba(255,77,109,.18), transparent 24%),
+      linear-gradient(160deg, var(--bg1), var(--bg2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+  }
+  .card {
+    width: min(94vw, 760px);
+    background: var(--panel);
+    border: 2px solid rgba(255,255,255,.08);
+    border-radius: 28px;
+    padding: 28px 22px 30px;
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,.04) inset,
+      0 16px 60px rgba(0,0,0,.5),
+      0 0 26px rgba(124,92,255,.28);
+    backdrop-filter: blur(8px);
+    text-align: center;
+  }
+  .tag {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: clamp(12px, 2.8vw, 16px);
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #081018;
+    background: linear-gradient(90deg, var(--accent), #fff08a);
+    margin-bottom: 14px;
+  }
+  h1 {
+    margin: 0 0 12px;
+    font-size: clamp(30px, 7vw, 56px);
+    line-height: 1.02;
+    text-shadow: 0 0 18px rgba(255,255,255,.12);
+  }
+  .content {
+    margin-top: 16px;
+    font-size: clamp(22px, 5vw, 34px);
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .content p { margin: 14px 0; }
+  .highlight {
+    color: #fff08a;
+    font-weight: 800;
+  }
+  .footer {
+    margin-top: 18px;
+    font-size: clamp(14px, 3vw, 18px);
+    color: var(--muted);
+    letter-spacing: .04em;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="tag">Final Security</div>
+    <h1>🚨 ACCESS DENIED 🚨</h1>
+    <div class="content">
+      <p>Partial code accepted. Full access blocked.</p>
+      <p>You are missing <span class="highlight">one final digit</span>.</p>
+      <p>🐣 <span class="highlight">Tilli holds the last key.</span></p>
+      <p>Locate her.<br>Join forces.</p>
+      <p>Only together can the vault be opened.</p>
+    </div>
+    <div class="footer">Combine the code. Unlock the system.</div>
+  </div>
+</body>
+</html>
